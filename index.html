@@ -49,31 +49,30 @@
                                 <div class="form-group">
                                     <label for="fakultas">Fakultas</label>
                                     <select class="form-control" id="fakultas">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Ilmu Komputer</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="jurusan">Jurusan</label>
-                                    <select class="form-control" id="jurusan">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <select onchange="conditionJurusan()" class="form-control" id="jurusan">
+                                        <option value="" hidden disabled selected value></option>
+                                        <option value="teknikInformatika">Teknik Informatika</option>
+                                        <option value="sistemInformasi">Sistem Informasi</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group" id="prodiTeknikInformatika">
                                     <label for="prodi1">Program Studi</label>
                                     <select class="form-control" id="prodi1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Teknik Informatika</option>
+                                        <option>Teknik Komputer</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="prodiSistemInformasi">
+                                    <label for="prodi1">Program Studi</label>
+                                    <select class="form-control" id="prodi1">
+                                        <option>Sistem Informasi</option>
+                                        <option>Pendidikan Teknologi Informasi</option>
+                                        <option>Teknologi Informasi</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -119,6 +118,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="register.js"></script>
 </body>
 
 </html>
